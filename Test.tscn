@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://d6lvp8020n2b"]
+
+[ext_resource type="Shader" path="res://shaders/test.gdshader" id="1_hluqf"]
+[ext_resource type="Texture2D" uid="uid://c5ox7ufyxr0sh" path="res://icon.svg" id="2_e1j22"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xd66i"]
+render_priority = 0
+shader = ExtResource("1_hluqf")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(2.4349, 0, 0, 0, 1.34381, 0, 0, 0, 1, 0, 0, 0)
+material_override = SubResource("ShaderMaterial_xd66i")
+texture = ExtResource("2_e1j22")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.70059)
